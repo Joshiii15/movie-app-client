@@ -14,7 +14,8 @@ const MovieDetails = () => {
   useEffect(() => {
     const fetchMovie = async () => {
       const response = await axios.get(
-        `http://localhost:4000/movies/getMovie/${movieId}`
+        `https://movieapp-api-lms1.onrender.com/movies/getMovie/${movieId}`
+        // `http://localhost:4000/movies/getMovie/${movieId}`
       );
 
       console.log(response);

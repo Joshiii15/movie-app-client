@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Form, Button, Container } from "react-bootstrap";
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { Notyf } from "notyf";
 import axios from "axios";
 
@@ -20,7 +20,8 @@ const AddMovie = () => {
     let token = localStorage.getItem("access");
 
     const response = await axios.post(
-      "http://localhost:4000/movies/addMovie",
+      `https://movieapp-api-lms1.onrender.com/movies/addMovie`,
+      //"http://localhost:4000/movies/addMovie",
       {
         title,
         description,

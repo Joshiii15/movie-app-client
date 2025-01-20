@@ -29,7 +29,8 @@ const EditMovie = ({ movie, onUpdate }) => {
 
     try {
       const response = await axios.patch(
-        `http://localhost:4000/movies/updateMovie/${movieId}`,
+        `https://movieapp-api-lms1.onrender.com/movies/updateMovie/${movieId}`,
+        // `http://localhost:4000/movies/updateMovie/${movieId}`,
         {
           title,
           description,

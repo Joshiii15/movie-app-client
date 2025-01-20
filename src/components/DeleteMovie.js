@@ -19,7 +19,8 @@ const DeleteMovie = ({ movie, onMovieDeleted }) => {
   const deleteMovie = async () => {
     try {
       const response = await axios.delete(
-        `http://localhost:4000/movies/deleteMovie/${movie._id}`,
+        `https://movieapp-api-lms1.onrender.com/movies/deleteMovies/${movie._id}`,
+        // `http://localhost:4000/movies/deleteMovie/${movie._id}`,
         {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("access")}`,

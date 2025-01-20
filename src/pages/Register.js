@@ -21,7 +21,8 @@ const Register = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:4000/users/register",
+        `https://movieapp-api-lms1.onrender.com/users/register`,
+        // "http://localhost:4000/users/register",
         {
           email,
           password,
